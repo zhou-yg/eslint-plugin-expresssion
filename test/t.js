@@ -16,14 +16,19 @@ ruleTester.run('use-t-function', rules.assign2state, {
 
   invalid: [
     {
-      code: 'this.$store.state.a=1;this.$store.state.a.b=2;',
+      code: `
+      var a = 1;
+      this.$store.state.a = a;
+
+      this.$store.state.a.b = 2;
+      `,
       errors: [
         {
-          message: `You cant assign "1" directly to "$store.state.a"`,
+          message: `You cant assign "a" directly to "this.$store.state.a"`,
           type: 'AssignmentExpression',
         },
         {
-          message: `You cant assign "2" directly to "$store.state.a.b"`,
+          message: `You cant assign "2" directly to "this.$store.state.a.b"`,
           type: 'AssignmentExpression',
         },
       ],

@@ -10,9 +10,11 @@ var Cpt = Vue.extend({
 });
 `
 code = `
-// this.$store.dispatch("update");
-this.$store.state.d = 1;
-// this.$store.state.mdule.b = 2;
+var a = 1;
+
+this.$store.state.d = this.b.c;
+
+this.$store.state.mdule.b = 2;
 `
 
 var ast = espree.parse(code, {

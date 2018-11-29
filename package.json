@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-assign2state",
-  "version": "0.0.0",
+  "name": "eslint-plugin-expression",
+  "version": "0.0.1",
   "description": "check if some one assign value to $store.state directly unless using $store.dispatch",
   "keywords": [
     "eslint",

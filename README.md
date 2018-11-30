@@ -1,4 +1,4 @@
-# eslint-plugin-display-name
+# eslint-plugin-expression
 
 dn
 
@@ -10,22 +10,22 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-display-name`:
+Next, install `eslint-plugin-expression`:
 
 ```
-$ npm install eslint-plugin-display-name --save-dev
+$ npm install eslint-plugin-expression --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-display-name` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-expression` globally.
 
 ## Usage
 
-Add `display-name` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `expression` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "display-name"
+        "expression"
     ]
 }
 ```
@@ -36,7 +36,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "display-name/rule-name": 2
+        "expression/rule-name": 2
     }
 }
 ```
